@@ -74,15 +74,32 @@ sap.ui.define([
         },
 
         onPressCheckout: function (){
-            var oInputFNameValue = this.getView().byId("idInptFName").getValue();
-            var oInputLNameValue = this.getView().byId("idInptLName").getValue();
+            var oInputFName = this.getView().byId("idInptFName");
+            var oInputLName = this.getView().byId("idInptLName");
+            var oInputFNameValue = oInputFName.getValue();
+            var oInputLNameValue = oInputLName.getValue();
+            var oRouter = this.getOwnerComponent().getRouter();
 
-            // Check if first name is blank
-            if (oInputFNameValue === "" && oInputLNameValue === ""){ //if both are blank.
-                sap.m.MessageToast.show("Required Fields are blank."); 
-            } else if (oInputFNameValue === "" || oInputLNameValue === ""){ //if either first name or last name is blank
-                sap.m.MessageToast.show("Required Field is blank"); 
-            } 
+
+            // Check if first name and last name is blank
+            if (oInputFNameValue === "" || oInputLNameValue === ""){
+               
+// set value state to Error
+                oInputFName.setValueState("Error");
+                oInputLName.setValueState("Error");
+            } else {
+                oInputFName.setValueState("None");
+                oInputLName.setValueState("None");
+
+
+                //Navigate to review page passing first
+                oRouter.navTo("RouteReviewPage", {
+                    firstName: oInputFNameValue
+                });
+
+
+            }
+
         },
 
         onCloseDialog: function (){
