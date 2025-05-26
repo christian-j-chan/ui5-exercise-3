@@ -26,44 +26,7 @@
                         <Input id="idInputCC" value="" visible="false"/>
                     </f:content>
                 </f:SimpleForm>
-                <Table id="idTableSCart" inset="false">
-                    <headerToolbar>
-                        <OverflowToolbar id="idOFT">
-                            <content>
-                                <Title id="idTableTitleSCart" text="{i18n>shopCartLbl}"/>
-                                <ToolbarSpacer id="idTSpacer"/>
-                                <Button id="idBtnAddItems" icon="sap-icon://cart-4" tooltip="{i18n>shopCartTip}" press="onAddItem"/>
-                            </content>
-                        </OverflowToolbar>
-                    </headerToolbar>
-                    <columns>
-                        <Column id="idCol1">
-                            <Text id="idColText1" text="{i18n>itemCol}" />
-                        </Column>
-                        <Column id="idCol2">
-                            <Text id="idColText2" text="{i18n>qtyCol}" />
-                        </Column>
-                        <Column id="idCol3">
-                            <Text id="idColText3" text="{i18n>priceCol}" />
-                        </Column>
-                    </columns>
-                    <items>
-                        <ColumnListItem id="idColListItem1" vAlign="Middle">
-                            <cells>
-                                <Text id="idText1" text="{i18n>appleIphone}" />
-                                <Text id="idText2" text="2" />
-                                <Text id="idText3" text="$2000" />
-                            </cells>
-                        </ColumnListItem>
-                        <ColumnListItem id="idColListItem2" vAlign="Middle">
-                            <cells>
-                                <Text id="idText4" text="{i18n>louisVuitton}" />
-                                <Text id="idText5" text="1" />
-                                <Text id="idText6" text="$14000" />
-                            </cells>
-                        </ColumnListItem>
-                    </items>
-                </Table>
+                <core:Fragment fragmentName="com.training.exer3chan.fragment.ShoppingCart" type="XML" />
             </VBox>
         </content>
         <footer>
