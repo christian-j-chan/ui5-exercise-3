@@ -9,7 +9,7 @@ sap.ui.define([
         "use strict";
 
 
-        return Controller.extend("com.training.day3demo.controller.ReviewPage", {
+        return Controller.extend("com.training.exer3chan.controller.ReviewPage", {
             onInit: function () {
                 // Get the router object
                 var oRouter = this.getOwnerComponent().getRouter();
