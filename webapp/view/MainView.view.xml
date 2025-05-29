@@ -3,10 +3,10 @@
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
     xmlns:core="sap.ui.core">
-    <Page id="page" title="{i18n>title}" floatingFooter="true">
+    <Page id="page" class="pageTitle" title="{i18n>title}" floatingFooter="true">
         <content>
             <VBox id="idVBox" class="sapUiSmallMargin">
-                <f:SimpleForm id="idSimpleForm" editable="true" layout="ResponsiveGridLayout" title="Details" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                <f:SimpleForm id="idSimpleForm" editable="true" layout="ResponsiveGridLayout" title="Details" class="headerTitle" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
                     <f:content>
                         <Label id="idLblFName" text="{i18n>firstNameLbl}" />
                         <Input id="idInptFName" value="" />
@@ -67,7 +67,7 @@
             </VBox>
         </content>
         <footer>
-            <OverflowToolbar id="idOFTFooter">
+            <OverflowToolbar id="idOFTFooter" class="footertoolbar">
                 <ToolbarSpacer id="idTSpacerFooter"/>
                 <Button id="idBtnCheckout" text="{i18n>checkOutTextTip}" tooltip="{i18n>checkOutTextTip}" press="onPressCheckout"/>
             </OverflowToolbar>

@@ -1,1 +1,9 @@
 /* Enter your custom styles here */
+
+.headerTitle, #idReviewPage{
+    color:blueviolet;
+}
+
+.prodDialog[title], .footertoolbar{
+    background-color: rgb(151, 211, 171);
+}
