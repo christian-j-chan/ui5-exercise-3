@@ -6,8 +6,7 @@
     <Page id="page" class="pageTitle" title="{i18n>title}" floatingFooter="true">
         <content>
             <VBox id="idVBox" class="sapUiSmallMargin">
-                <f:SimpleForm id="idSimpleForm" editable="true" layout="ResponsiveGridLayout"  labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
-                    <Title id="titleformID" text="Details" class="headerTitle"></Title>
+                <f:SimpleForm id="idSimpleForm" editable="true" layout="ResponsiveGridLayout" class="nameForm" title="{i18n>details}"  labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
                     <f:content>
                         <Label id="idLblFName" text="{i18n>firstNameLbl}" />
                         <Input id="idInptFName" value="" />

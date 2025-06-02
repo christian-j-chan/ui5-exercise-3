@@ -1,9 +1,33 @@
 /* Enter your custom styles here */
 
-.headerTitle, #idReviewPage{
+.nameForm .sapUiFormTitleH4, .headerTitle, .pageTitle{
     color:blueviolet;
 }
 
-.prodDialog[title], .footertoolbar{
-    background-color: rgb(151, 211, 171);
+.prodTitle{
+    background-color: bisque;
+    color:darkblue;}
+
+.sapMColumnHeader .sapMText{
+    color: red;
+}
+
+.sapMIBar-CTX .sapMTitle{
+    color:darkolivegreen;
+}
+
+html.sap-desktop .sapMIBar.sapMFooter-CTX{
+    background-color: gold;
+}
+
+.sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault:not(.sapMToggleBtnPressed){
+    color: #781FC6;
+}
+
+.prodDialog .sapMIBar.sapMHeader-CTX{
+    background-color: cornsilk;
+}
+
+.prodDialog.sapMDialog>header .sapMDialogTitleGroup .sapMTitle{
+    color: cornflowerblue;
 }
